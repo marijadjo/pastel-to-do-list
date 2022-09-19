@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Popins', sans-serif;
+    font-size: 16px;
+}
+
+.bg {
+    height: 100vh;;
+    background-image: url('img/john-fowler-RsRTIofe0HE-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.wrapper {
+    margin-top: 5rem;
+    background: rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(18px);
+    border-radius: 30px;
+    width: 60%;
+    text-align: center;
+    padding: 4rem;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+    color: #243C44;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    background: #FDF9F9;
+    border-radius: 20px 0 0 20px;
+    height: 60px;
+    padding: 1rem 2rem;
+    width: 60%;
+}
+
+.add-btn {
+    height: 60px;
+    padding: 1.5rem;
+    border: none;
+    background-color: #D9A099;
+    border-radius: 0 20px 20px 0;
+}
+
+i {
+    color: #FDF9F9;
+}
+
+/* To Do div */
+ul {
+    list-style: none;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo {
+    background-color: #FDF9F9;
+    width: 66%;
+    border-radius: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-task {
+    flex: 1;
+    text-align: left;
+    padding: 1.5rem 2rem;
+}
+
+.complete-btn,
+.trash-btn {
+    background-color: transparent;
+    border: none;
+    padding: 1.5rem;
+}
+
+.complete-btn i,
+.trash-btn  i {
+    color: #243C44;
+    pointer-events: none;
+}
+
+.trash-btn {
+    border-radius: 0 20px 20px 0;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    opacity: 50%;
+}
